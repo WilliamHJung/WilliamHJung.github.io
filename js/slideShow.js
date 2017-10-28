@@ -6,7 +6,7 @@
 ***********************************************/
 var slideshow_width='200px' //SET IMAGE WIDTH
 var slideshow_height='149px' //SET IMAGE HEIGHT
-var pause=4000 //SET PAUSE BETWEEN SLIDE (3000=3 seconds)
+var pause=6000 //SET PAUSE BETWEEN SLIDE (3000=3 seconds)
 var fadeimages=new Array()
 //SET IMAGE PATHS. Extend or contract array as needed
 fadeimages[0]="slideshow/wj_gtr.jpg"
