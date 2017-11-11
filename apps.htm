@@ -2,7 +2,16 @@
 <html lang="en">
 <html><head>
 <link href="css/style.css" rel="stylesheet" type="text/css" />
-<title>William Jung</title></head>
+<title>William Jung</title>
+<style>
+.floating-box {
+    display: inline-block; vertical-align: top;
+	width: 160px;
+    margin: 5px; 
+}
+</style>
+</head>
+
 <body>
 <div id="container">
 	<div id="header">
@@ -20,11 +29,23 @@
 	<div id="content">
 		<div id="left">
 		<h1>Apps I've developed.</h1>
-		<ul>
-		<li><a href="RealBook/index.html" target="_blank"><img src="images/RealBook_thumbnail.jpg"/><br />Music Instruction Software</a></li>
-</a>
-<br /><br /><br /><br />
-</div>
+			<div class="floating-box">
+			<a href="RealBook/index.html" target="_blank"><img src="images/RealBook_thumbnail.jpg"><br />Music Instruction Software</a>
+			<p>Originally I developed this app in Flash and it included a Search function and a playlist function. I will be implementing that
+			functionality soon in this revamped HTML5 version.</p>
+			</div>
+			<div class="floating-box">
+			<a href="shopList.htm" target="_blank"><img src="images/shoppingList.jpg"><br />Shopping List app</a>
+			<p>This Android app written in HTML5, Javascript, OnsenUI, and WebSql can be previewed and run in the Chrome browser, but other browsers
+			will not run it correctly. I intend to migrate to a different client side SQL variant to make it work on all browsers and Apple products.</p>
+			</div>
+			<div class="floating-box">
+			<a href="" target="_blank"><img src="images/phpMysql.jpg"><br />PHP and Mysql Installs and Applications</a>
+			<p>The PHP and Mysql installations and programs that I've developed reside on my Server which is currently offline and
+			being upgraded. Pictures of the applications can be viewed in the Porfolio Items section of this site.</p>
+			</div>
+		<br /><br /><br /><br />
+		</div>
 		<div id="right">
 		<ul>	
 		<li><a href="index.html">Home</a></li>
