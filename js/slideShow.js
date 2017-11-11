@@ -9,7 +9,7 @@ var slideshow_height='149px' //SET IMAGE HEIGHT
 var pause=6000 //SET PAUSE BETWEEN SLIDE (3000=3 seconds)
 var fadeimages=new Array()
 //SET IMAGE PATHS. Extend or contract array as needed
-fadeimages[0]="slideshow/wj_gtr.jpg"
+fadeimages[0]="slideshow/whj.jpg"
 fadeimages[1]="slideshow/studentDatabase.jpg"
 fadeimages[2]="slideshow/tudentDatabaseSql.jpg"
 fadeimages[3]="slideshow/perfboardCircuit.jpg"
