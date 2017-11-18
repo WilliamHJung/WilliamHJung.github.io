@@ -55,10 +55,10 @@ li {
 	width: 100%;
 }
 #header_text {
-	top:10px;
-	left:400px;
-	width:230px;
-	position:absolute;
+	max-height: calc(100% - 100px);
+	position: fixed;
+    left: 50%;
+	transform: translate(-50%, -120%);
 }
 .customHr {
     width: 95%
