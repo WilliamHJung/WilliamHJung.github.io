@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html manifest="offline.appcache">
+  <head>
+  <!-- whj -->
+    <link rel="stylesheet" href="styles.css">
+	<script src="indexeddb.shim.min.js"></script>
+    <script src="application.js"></script>
+  </head>
+  <body>	
+	<div id="mySidenav" class="sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<a href="#">Click on any item to DELETE it.</a>
+		<br>
+		<div class="customHr">.</div>
+		<a href="#">About:</a>
+		<a href="#">The database portion of this App is based on Matt Andrews' work with IndexedDB and WebSql. Thanks for using my app.
+		<p>William Jung</a></p>
+		
+	</div>
+	<div id="titleBar">
+		<p id="tabBar">
+		<span style="font-size:40px;cursor:pointer;" onclick="openNav()">&#9776;</span></p>
+		<script>
+		function openNav() {
+			document.getElementById("mySidenav").style.width = "250px";
+		}
+		function closeNav() {
+			document.getElementById("mySidenav").style.width = "0";
+		}
+		</script>
+		<div id="header_text">
+		Shopping List
+		</div>
+	</div>
+	<form>
+	<input autofocus placeholder="Type an item and press Enter"/>
+	</form>
+	<ul>
+	</ul>  
+				  
+  </body>
+</html>
