@@ -15,8 +15,7 @@
  
   function onClick(e) {
  
-    // We'll assume any element with an ID attribute
-    // is a todo item. Don't try this at home!
+    // We'll assume any element with an ID attribute is a todo item. 
     if (e.target.hasAttribute('id')) {
  
       // Note because the id is stored in the DOM, it becomes
@@ -34,9 +33,9 @@
     });
     ul.innerHTML = html;
   }
- 
+   // <!-- &#9949 = the unicode symbol for boxed X -->
   function todoToHtml(todo) {
-    return '<li id="'+todo.timeStamp+'">'+todo.text+'</li>';
+    return '<li id="'+todo.timeStamp+'">&#9949;&nbsp;&nbsp;&nbsp;&nbsp;'+todo.text+'</li>';
   }
 
   function onSubmit(e) {
