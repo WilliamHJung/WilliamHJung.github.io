@@ -1,7 +1,0 @@
-To change toolbar color:
-Go to the directory /lib/onsenui/css from the root of your project
-Open onsen-css-components.css
-Search for the class .toolbar--material
-Modify the background-color property of the class to a color of your choice
-
-====================
