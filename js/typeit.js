@@ -41,8 +41,8 @@
       deleteDelay: 750,
       startDelay: 250,
       startDelete: false,
-      loop: false,
-      loopDelay: 750,
+      loop: true,
+      loopDelay: 7500,
       html: true,
       autoStart: true,
       callback: function() {}
