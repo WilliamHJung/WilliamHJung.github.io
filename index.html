@@ -23,6 +23,8 @@
 @import url("themes/corporateclean/local25f2.css?p1ynol");
 </style>
 
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+
 <!--[if (lte IE 8)&(!IEMobile)]>
 <link type="text/css" rel="stylesheet" href="themes/corporateclean/css/basic-layout.css?p1ynol" media="all" />
 <![endif]-->
@@ -65,12 +67,27 @@ jQuery.extend(Drupal.settings, {"basePath":"\/php\/drupal\/","pathPrefix":"","aj
     
 <div class="grid_12">
 <div id="navigation" class="clearfix">
-	<ul class="menu"><li class="first leaf"><a href="index.html">Home</a></li>
-	<li class="leaf"><a href="about.html">About</a></li>
-	<li class="leaf"><a href="apps.html">Apps</a></li>
-	<li class="leaf"><a href="media.html">Music and Videos</a></li>
-	<li class="last leaf"><a href="portview.html" title="">Portfolio Items</a></li>
-	</ul>
+<script>
+ /* Responsive Menu: Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+ /* End of: Responsive Menu  */
+ </script>
+<div class="topnav" id="myTopnav">
+  <a href="index.html" class="active">Home</a>
+  <a href="about.html">About</a>
+  <a href="apps.html">Apps</a>
+  <a href="media.html">Music and Videos</a>
+  <a href="portview.html">Portfolio Items</a>
+
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
 </div>
 </div>        
 </div><!-- EOF: #header-menu-inside -->
@@ -87,7 +104,7 @@ jQuery.extend(Drupal.settings, {"basePath":"\/php\/drupal\/","pathPrefix":"","aj
         <div class="slider-item">
             <div class="content container_12">
             	<div class="grid_12">
-                
+                <div id="button1">
                 <!--slider-item content-->
                 <div style="float:left; padding:0 30px 0 0;">
                 <img class="masked" src="themes/corporateclean/mockup/slide-1.jpg"/>
@@ -102,6 +119,7 @@ jQuery.extend(Drupal.settings, {"basePath":"\/php\/drupal\/","pathPrefix":"","aj
                 <!--EOF:slider-item content-->
                 
                 </div>
+				</div>
             </div>
         </div>
         <!--EOF:slider-item-->
