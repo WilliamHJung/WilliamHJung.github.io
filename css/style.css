@@ -4,6 +4,12 @@
     margin: 2px; 
 }
 
+.floating-box-large {
+    display: inline-block; vertical-align: top;
+	width: 220px;
+    margin: 2px; 
+}
+
 .content a:hover{
 	font-weight: bold;
 	text-decoration:none;
