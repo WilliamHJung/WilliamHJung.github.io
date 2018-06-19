@@ -601,12 +601,12 @@ img {
 }
 
 /* ---------------------The Playlist menu--------------------- */
-.dl_link {
+.dropDownMenu_link {
 	font-size: 18px;
 	padding: 0px 6px 0px 6px;
     cursor:pointer;
 }
-.dl_sub_dd {
+.dropDownMenu_sub_dd {
 	display: none;
     position: absolute;
     min-width: 350px;
