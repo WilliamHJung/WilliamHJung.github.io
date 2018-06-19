@@ -105,7 +105,7 @@ $(document).ready(function(){
 //]]>
 </script>
 </head>
-<body onload="changeIt('jpg/502 Blues - Shorter, Wayne.jpg', 'songImage')">
+<body onload="changeIt('jpg/502 Blues - Shorter, Wayne.jpg', 'songImage')"> <!-- Change image to correspond with MP3 -->
 
 <div class="mainContent">
 	<div class="menuContainer">
@@ -113,7 +113,7 @@ $(document).ready(function(){
 			<div id="jp_container_1" class="jp-audio" role="application" aria-label="media player">
 				<div class="jp-type-playlist">
 					<div id="jquery_jplayer_1" class="jp-jplayer"></div>
-					<div class="dl_link">&#9776; <span id="pageTitle"></span></div>	 		
+					<div class="dl_link">&#9776; <span id="pageTitle"></span></div>	 <!-- display html page Title -->		
 					<div class="dl_sub_dd"> 
 						<div class="jp-playlist">
 							<ul>
@@ -132,6 +132,7 @@ document.getElementById("pageTitle").innerHTML = htmlTitle;
 </script>
 
 <div id="jquery_jplayer_1" class="jp-jplayer"></div>
+<div id="playerControls">
 <div id="jp_container_1" class="jp-audio" role="application" aria-label="media player">
 	<div class="jp-type-playlist">
 		<div id="song_description"></div>
@@ -169,8 +170,9 @@ document.getElementById("pageTitle").innerHTML = htmlTitle;
 			To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
 		</div>
 	</div>	
+</div>	
 </div>
-	<div id="songImage"></div>	
+	<div id="songImage"></div>	<!-- display the image that corresponds with MP3 -->
 </div>
 </body>
 </html>
