@@ -552,19 +552,9 @@ $(window).on('load',function(){
 
 /* -----------------------------Drop down Menu----------------------------- */
 jQuery(function($){
-  $('#songImage, #playerControls, .jp-playlist').click(function(e){	// select DIV Id (#) or Class (.)
+  $('#songImage, #playerControls, .jp-playlist').click(function(e){	// select DIVs by Id (#) or Class (.) and Detect if click occured then close menu
 	$(".dl_sub_dd").hide();  		// hide DIV Class
-    e.stopPropagation(); // Prevent bubbling
+    e.stopPropagation(); // Stop the click event from bubbling to parent elements
   });
-  
-		/* Detect if click occured in other parts of page and close menu 
-  $('#playerControls').click(function(e){	// select DIV Id
-    console.log( 'playerControls div' );
-	$(".dl_sub_dd").hide();			// hide DIV Class
-  });
-    $('.jp-playlist').click(function(e){	// select DIV Class
-    console.log( 'jp-playlist' );
-	$(".dl_sub_dd").hide(); 		// hide DIV Class
-  });*/
 });
 
