@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>The Real Book</title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
@@ -106,13 +107,13 @@ $(document).ready(function(){
 </script>
 </head>
 <body onload="changeIt('jpg/502 Blues - Shorter, Wayne.jpg', 'songImage')"> <!-- Change image to correspond with MP3 -->
-
 <div class="mainContent">
 	<div class="menuContainer">
 		<div class="dl_parent">
 			<div id="jp_container_1" class="jp-audio" role="application" aria-label="media player">
 				<div class="jp-type-playlist">
 					<div id="jquery_jplayer_1" class="jp-jplayer"></div>
+								
 					<div class="dropDownMenu_link">&#9776; <span id="pageTitle"></span></div>	 <!-- display html page Title -->		
 					<div class="dropDownMenu_sub_dd"> 
 						<div class="jp-playlist">
@@ -130,12 +131,13 @@ $(document).ready(function(){
 var htmlTitle = document.title;
 document.getElementById("pageTitle").innerHTML = htmlTitle;
 </script>
+<div id="navbar">
 
 <div id="jquery_jplayer_1" class="jp-jplayer"></div>
 <div id="playerControls">
 <div id="jp_container_1" class="jp-audio" role="application" aria-label="media player">
 	<div class="jp-type-playlist">
-		<div id="song_description"></div>
+		<div id="song_description"></div>  <!-- MP3 Title -->
 		<div class="jp-gui jp-interface">
 			<div class="jp-controls">
 				<button class="jp-previous" role="button" tabindex="0">previous</button>
@@ -171,8 +173,27 @@ document.getElementById("pageTitle").innerHTML = htmlTitle;
 		</div>
 	</div>	
 </div>	
+
+</div>
 </div>
 	<div id="songImage"></div>	<!-- display the image that corresponds with MP3 -->
 </div>
+
+<!-- Stick Scroll function -->
+<script type="text/javascript">
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
 </body>
 </html>
