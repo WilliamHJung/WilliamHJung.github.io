@@ -104,7 +104,8 @@
 /* @group CONTROLS */
 .jp-controls-holder {
   clear: both;
-  width: 440px;
+  /*width: 440px;  @group CONTROLS */
+   width: 100%;
   margin: 0 auto;
   position: relative;
   overflow: hidden;
@@ -117,7 +118,8 @@
   overflow: hidden; }
 
 .jp-audio .jp-controls {
-  width: 380px;
+ /* width: 380px;*/
+  width: 100%;
   padding: 20px 20px 0 20px; }
 
 .jp-audio-stream .jp-controls {
