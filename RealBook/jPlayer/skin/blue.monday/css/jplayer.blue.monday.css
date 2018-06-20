@@ -580,7 +580,7 @@ span.jp-artist {
 }
 
 #pageTitle {
-	font-size: 26px;
+	font-size: 20px;
 	color: #680000;
 }
 
@@ -605,7 +605,7 @@ img {
 
 /* ---------------------The Playlist menu--------------------- */
 .dropDownMenu_link {
-	font-size: 26px;
+	font-size: 20px;
 	padding: 0px 6px 0px 6px;
     cursor:pointer;
 }
