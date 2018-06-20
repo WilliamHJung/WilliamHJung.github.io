@@ -575,14 +575,17 @@ span.jp-artist {
 /* #pageTitle,#song_description {
     display: inline-block;
   } */
+.mainContent {
+  padding: 0px;
+}
 
 #pageTitle {
-	font-size: 18px;
+	font-size: 32px;
 	color: #680000;
 }
 
 #song_description {
-	font-size: 12px;
+	font-size: 20px;
 	padding: 0px 0px 0px 6px;
 }
 
@@ -602,7 +605,7 @@ img {
 
 /* ---------------------The Playlist menu--------------------- */
 .dropDownMenu_link {
-	font-size: 18px;
+	font-size: 30px;
 	padding: 0px 6px 0px 6px;
     cursor:pointer;
 }
@@ -610,9 +613,37 @@ img {
 	display: none;
     position: absolute;
     min-width: 350px;
-	max-height: 600px;
+	max-height: 440px;
 	overflow-y: scroll;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
-/* ---------------------End Playlist menu--------------------- */
+/* ---------------------Sticky Navbar--------------------- */
+.menuContainer {
+	padding: 0px 0px 0px 0px;
+}
+
+#navbar {
+  overflow: hidden;
+
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .mainContent {
+  padding-top: 60px;
+}
