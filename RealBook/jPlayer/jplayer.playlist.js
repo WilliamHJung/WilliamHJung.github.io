@@ -557,4 +557,5 @@ jQuery(function($){
     e.stopPropagation(); 			// Stop the click event from bubbling to parent elements
   });
 });
+
 /* --------------------------------End Drop down Menu-------------------------------- */
