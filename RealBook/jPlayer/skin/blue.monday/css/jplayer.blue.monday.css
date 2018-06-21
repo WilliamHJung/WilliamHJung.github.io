@@ -170,7 +170,8 @@
 
 .jp-stop {
   background: url("../image/jplayer.blue.monday.jpg") 0 -83px no-repeat;
-  margin-left: 10px; }
+ /* margin-left: 10px; }  Stop button location */
+  margin-left: 2px; }
 
 .jp-stop:focus {
   background: url("../image/jplayer.blue.monday.jpg") -29px -83px no-repeat; }
@@ -205,8 +206,8 @@
 
 .jp-audio .jp-type-playlist .jp-progress {
   /* left: 166px;  original progress bar location  - wj */
-  left: 148px; /* change progress bar location  - wj */
-  width: 130px; }
+  left: 134px; /* change progress bar location  - wj */
+  width: 120px; }
 
 .jp-video .jp-progress {
   top: 0px;
@@ -239,7 +240,7 @@
   /* top: 32px;  original volume max/min button location  - wj */
   top: 7px; /* change volume max/min button location  - wj */
   /* left: 308px;  original volume max/min button location  - wj */
-  left: 282px; /* change volume max/min button location  - wj */
+  left: 258px; /* change volume max/min button location  - wj */
   width: 200px; }
 
 .jp-audio-stream .jp-volume-controls {
@@ -264,7 +265,7 @@
 
 .jp-volume-max { 
  /* left: 74px; }  original volume max/min button location  - wj */
-  left: 63px; } /* change volume max/min button location  - wj */
+  left: 62px; } /* change volume max/min button location  - wj */
 
 .jp-mute {
   background: url("../image/jplayer.blue.monday.jpg") 0 -170px no-repeat; }
@@ -313,9 +314,10 @@
   width: 186px; }
 
 .jp-audio .jp-type-playlist .jp-time-holder {
-  /* left: 166px;  original progress bar location  - wj */
-  left: 148px; /* change progress bar location  - wj */
-  width: 130px; }
+  /* left: 166px;  original current time digits location  - wj */
+  left: 133px; /* change current time digits location  - wj */
+  /* width: 130px; }   change current time digits width separation  - wj */
+  width: 120px; } 
 
 .jp-current-time,
 .jp-duration {
@@ -325,7 +327,7 @@
 
 .jp-current-time {
   float: left;
-  display: inline;
+ /*display: inline; - change current time digits width separation  - wj */
   cursor: default; }
 
 .jp-duration {
@@ -488,7 +490,7 @@ span.jp-artist {
   margin: 0;
   position: absolute;
   /* left: 325px; original repeat and shuffle toggle button locations  - wj */
-  left: 295px;
+  left: 270px;
   /* top: 50px; }  original repeat and shuffle toggle button location top */
    top: 20px; } /* change repeat and shuffle toggle button locations  - wj */
 
