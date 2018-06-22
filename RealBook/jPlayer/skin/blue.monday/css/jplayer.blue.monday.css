@@ -26,14 +26,14 @@
   /* Disable the browser CSS3 focus highlighting. */
   border: 0; }
 
-.jp-audio,
+.jp-audio,			/* change player border lines and background color - wj */
 .jp-audio-stream,
 .jp-video {
   font-size: 16px;
   font-family: Verdana, Arial, sans-serif;
   line-height: 1.6;
   color: #666;
-  border: 1px solid #009be3;
+ /* border-top: 1px solid #009be3; original background border color - wj */
   background-color: #eee; }
 
 .jp-audio {
@@ -120,7 +120,7 @@
 .jp-audio .jp-controls {
   width: 380px;
  /* padding: 20px 20px 0 20px; }  original vol/stop/prev/next controls padding  - wj */
-  padding: 0px 20px 0 5px; } /* change vol/stop/prev/next controls padding  - wj */
+  padding: 0 0 0 5px; } /* change vol/stop/prev/next controls padding  - wj */
 
 .jp-audio-stream .jp-controls {
   position: absolute;
@@ -574,10 +574,7 @@ span.jp-artist {
 
 /* -----------------------------wj additions------------------------------------- */
 
-/* #pageTitle,#song_description {
-    display: inline-block;
-  } */
-.mainContent {
+#mainContent {
   padding: 0px;
 }
 
@@ -589,6 +586,14 @@ span.jp-artist {
 #song_description {
 	font-size: 12px;
 	padding: 0px 0px 0px 6px;
+}
+
+#menuContainer {
+	padding: 0px 0px 0px 0px;
+}
+
+#playerControls {
+border-top: 1px solid gray;
 }
 
 /* ---------------------Song Images-------------------- */
@@ -621,9 +626,6 @@ img {
     z-index: 1;
 }
 /* ---------------------Sticky Navbar--------------------- */
-.menuContainer {
-	padding: 0px 0px 0px 0px;
-}
 
 #navbar {
   overflow: hidden;
