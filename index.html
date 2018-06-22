@@ -1,302 +1,199 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta http-equiv="content-type" content="text/html;charset=utf-8" />
-<meta name="MobileOptimized" content="width" />
-<meta name="HandheldFriendly" content="true" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Responsive Meta Tag-the browser renders width of page at width of its own mobile screen-->
 
-<title>WilliamJung</title> 
+<title>The Real Book</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 
-<style type="text/css" media="all and (min-width: 980px)">
-@import url("themes/corporateclean/css/96025f2.css?p1ynol");
-</style>
-<style type="text/css" media="all and (min-width: 760px) and (max-width: 980px)">
-@import url("themes/corporateclean/css/72025f2.css?p1ynol");
-</style>
-<style type="text/css" media="all and (max-width: 760px)">
-@import url("themes/corporateclean/css/mobile25f2.css?p1ynol");
-</style>
-<style type="text/css" media="all">
-@import url("themes/corporateclean/style25f2.css?p1ynol");
-@import url("themes/corporateclean/color/colors25f2.css?p1ynol");
-@import url("themes/corporateclean/local25f2.css?p1ynol");
-</style>
-
-<link href="css/style.css" rel="stylesheet" type="text/css" />
-
-<!--[if (lte IE 8)&(!IEMobile)]>
-<link type="text/css" rel="stylesheet" href="themes/corporateclean/css/basic-layout.css?p1ynol" media="all" />
-<![endif]-->
-
-<!--[if (lte IE 8)&(!IEMobile)]>
-<link type="text/css" rel="stylesheet" href="themes/corporateclean/css/ie.css?p1ynol" media="all" />
-<![endif]-->
-   
-<script type="text/javascript" src="misc/jquery1cc4.js?v=1.4.4"></script>
-<script type="text/javascript" src="misc/jquery.once7839.js?v=1.2"></script>
-<script type="text/javascript" src="themes/corporateclean/js/jquery.cycle.all25f2.js?p1ynol"></script>
+<link href="jPlayer/skin/blue.monday/css/jplayer.blue.monday.css" rel="stylesheet" type="text/css" /><!-- Minify '.min' after mods - wj -->
+<script type="text/javascript" src="jPlayer/jquery.min.js"></script>
+<script type="text/javascript" src="jPlayer/jquery.jplayer.js"></script><!-- Minify '.min' after mods - wj -->
+<script type="text/javascript" src="jPlayer/jplayer.playlist.js"></script><!-- Minify '.min' after mods - wj -->
 
 <script type="text/javascript">
+//<![CDATA[
+$(document).ready(function(){
 
-<!--//--><![CDATA[//><!--
-jQuery.extend(Drupal.settings, {"basePath":"\/php\/drupal\/","pathPrefix":"","ajaxPageState":{"theme":"corporateclean","theme_token":"zWxb09nZBUzqrYbEdW8AcajPXeGxEW3jzYXBxJm65sY","js":{"0":1,"misc\/jquery.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"themes\/corporateclean\/js\/jquery.cycle.all.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"modules\/comment\/comment.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/ckeditor\/css\/ckeditor.css":1,"themes\/corporateclean\/css\/960.css":1,"themes\/corporateclean\/css\/720.css":1,"themes\/corporateclean\/css\/mobile.css":1,"themes\/corporateclean\/style.css":1,"themes\/corporateclean\/color\/colors.css":1,"themes\/corporateclean\/local.css":1,"themes\/corporateclean\/css\/basic-layout.css":1,"themes\/corporateclean\/css\/ie.css":1}}});
-//--><!]]>
+	new jPlayerPlaylist({
+		jPlayer: "#jquery_jplayer_1",
+		cssSelectorAncestor: "#jp_container_1"
+	}, [
+		{
+			title:"502 Blues - Shorter, Wayne",
+			mp3:"mp3/502%20Blues - Shorter,%20Wayne.mp3",
+		},
+		{
+			title:"African Flower - Ellington, Duke",
+			mp3:"mp3/African%20Flower - Ellington,%20Duke.mp3",
+		},
+		{
+			title:"Afro Blue - Coltrane, John",
+			mp3:"mp3/Afro%20Blue - Coltrane,%20John.mp3",
+		},
+		{
+			title:"Afternoon in Paris - Lewis, John",
+			mp3:"mp3/Afternoon%20in%20Paris - Lewis,%20John.mp3",
+		},
+		
+		{
+			title:"Airegin - Rollins, Sonny",
+			mp3:"mp3/Airegin - Rollins,%20Sonny.mp3",
+		},
+		{
+			title:"Alfie - Bacharach, Burt",
+			mp3:"mp3/Alfie - Bacharach,%20Burt.mp3",
+		},
+		{
+			title:"Alice in Wonderland - Brubeck, Dave",
+			mp3:"mp3/Alice%20in%20Wonderland - Brubeck,%20Dave.mp3",
+		},
+		{
+			title:"All Blues - Davis, Miles",
+			mp3:"mp3/All%20Blues - Davis,%20Miles.mp3",
+		},
+		{
+			title:"All in Love is Fair - Wonder, Stevie",
+			mp3:"mp3/All%20in%20Love%20is%20Fair - Wonder,%20Stevie.mp3",
+		},
+		{
+			title:"All My Tomorrows - Washington, Grover",
+			mp3:"mp3/All%20My%20Tomorrows - Washington,%20Grover.mp3",
+		},
+		{
+			title:"All of Me - Holiday, Billie",
+			mp3:"mp3/All%20of%20Me - Holiday,%20Billie.mp3",
+		},
+		{
+			title:"All of You - Evans, Bill",
+			mp3:"mp3/All%20of%20You - Evans,%20Bill.mp3",
+		},
+		{
+			title:"All the Things You Are - Vaughan, Sarah",
+			mp3:"mp3/All%20the%20Things%20You%20Are - Vaughan,%20Sarah.mp3",
+		},
+		{
+			title:"Alone Together - Baker, Chet",
+			mp3:"mp3/Alone%20Together - Baker,%20Chet.mp3",
+		},
+		{
+			title:"And Now, The Queen - Bley, Carla",
+			mp3:"mp3/And%20Now,%20The%20Queen - Bley,%20Carla.mp3",
+		},
+				{
+			title:"And On the Third Day - Burton, Gary",
+			mp3:"mp3/And%20On%20the%20Third%20Day - Burton,%20Gary.mp3",
+		},
+		{
+			title:"Angel Eyes - Baker, Chet",
+			mp3:"mp3/Angel%20Eyes - Baker,%20Chet.mp3",
+		},
+		{
+			title:"Anthropology - Parker, Charlie",
+			mp3:"mp3/Anthropology - Parker,%20Charlie.mp3",
+		}
+	], {
+		swfPath: "jPlayer/jplayer",
+		supplied: "mp3",
+		wmode: "window",
+		useStateClassSkin: true,
+		autoBlur: false,
+		smoothPlayBar: true,
+		keyEnabled: true
+	});
+});
+//]]>
 </script>
-<link rel="icon" type="image/x-icon" href="misc/favicon.ico">
 </head>
-<body>
-<!-- #header -->
-<div id="header">
-	<!-- #header-inside -->
-    <div id="header-inside" class="container_12 clearfix">
-    	<!-- #header-inside-left -->
-        <div id="header-inside-left" class="grid_8">
-			<a href="index.html" title="Home"><img src="themes/corporateclean/logo.png" alt="Home" /></a>
-        </div><!-- EOF: #header-inside-left -->        
-        <!-- #header-inside-right -->    
-        <div id="header-inside-right" class="grid_4">			
-        </div><!-- EOF: #header-inside-right -->   
-    </div><!-- EOF: #header-inside -->
-</div><!-- EOF: #header -->
+<body onload="changeIt('jpg/502 Blues - Shorter, Wayne.jpg', 'songImage')"> <!-- Change image to correspond with MP3 -->
 
-<!-- #header-menu -->
-<div id="header-menu">
-	<!-- #header-menu-inside -->
-    <div id="header-menu-inside" class="container_12 clearfix">
-    
-<div class="grid_12">
-<div id="navigation" class="clearfix">
+<div id="mainContent">
+	<div id="menuContainer">
+			<div id="jp_container_1" class="jp-audio" role="application" aria-label="media player">
+				<div class="jp-type-playlist">
+					<div id="jquery_jplayer_1" class="jp-jplayer"></div>
+								
+					<div class="dropDownMenu_link">&#9776; <span id="pageTitle"></span></div>	 <!-- display html page Title -->		
+					<div class="dropDownMenu_sub_dd"> 
+						<div class="jp-playlist">
+							<ul>
+								<li></li>
+							</ul>
+						</div> <!-- end jp-playlist -->				
+					</div>
+				</div>
+			</div>
+	</div>	
 <script>
- /* Responsive Menu: Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-        x.className += " responsive";
-    } else {
-        x.className = "topnav";
-    }
-}
- /* End of: Responsive Menu  */
- </script>
-<div class="topnav" id="myTopnav">
-  <a href="index.html" class="active">Home</a>
-  <a href="about.html">About</a>
-  <a href="apps.html">Apps</a>
-  <a href="media.html">Music and Videos</a>
-  <a href="https://drive.google.com/embeddedfolderview?id=0B8Z-e0LmlgZFYkhrTmtTdWRTVGM#grid" target="_blank">Portfolio Items</a>
-
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-</div>
-</div>
-</div>        
-</div><!-- EOF: #header-menu-inside -->
-
-</div><!-- EOF: #header-menu -->
-
-<!-- #banner -->
-<div id="banner">
-      
-    <!-- #slideshow -->
-    <div id="slideshow">
-    
-        <!--slider-item-->
-        <div class="slider-item">
-            <div class="content container_12">
-            	<div class="grid_12">
-                <div id="button1">
-                <!--slider-item content-->
-                <div style="float:left; padding:0 30px 0 0;">
-                <img class="masked" src="themes/corporateclean/mockup/slide-1.jpg"/>
-                </div>
-                <h2>William Jung</h2>
-                <strong>Technologist, Artist, Educator</strong><br/>
-                <em>Based in Milwaukee, WI</em><br/>
-                <br/>
-		After 20 successful years working as a Technlogy Coordinator and Elementary Teacher in the Milwaukee Public Schools, 
-		I am now applying my computer and technology skills, artistry, and electronics skill set in the business world.                 
-                <div style="display:block; padding:30px 0 10px 0;"><a class="more" href="about.html" target="_blank">Tell me more</a></div>
-                <!--EOF:slider-item content-->
-                
-                </div>
-				</div>
-            </div>
-        </div>
-        <!--EOF:slider-item-->
-        
-        <!--slider-item-->
-        <div class="slider-item">
-            <div class="content container_12">
-            	<div class="grid_12">
-                
-                <!--slider-item content-->
-                <div style="float:right; padding:0 0 0 30px;">
-                <img class="masked" src="themes/corporateclean/mockup/slide-2.jpg"/>
-                </div>
-                <h2>Responsive Web Site Design</h2>
-                <strong>Stand out in the digital world</strong><br/>
-                <em>CMS or Original Designs</em><br/>
-                <br/>
-		I can design your Web Site using Drupal, WordPress or a CMS of your choosing. I also specialize in developing original Responsive Web
-		Sites using HTML5, CSS and Javascript in their pure forms, or within a framework such as Pure.css.
-                <!--EOF:slider-item content-->
-                
-				</div>
-            </div>
-        </div>
-        <!--EOF:slider-item-->
-        
-        <!--slider-item-->
-        <div class="slider-item">
-            <div class="content container_12">
-            	<div class="grid_12">
-                
-                <!--slider-item content-->
-                <div style="float:right; padding:0 0 0 30px;">
-                <img class="masked" src="themes/corporateclean/mockup/slide-3.jpg"/>
-                </div>
-                <h2>Microsoft and Linux Server and Desktop Installations, Repair, and Management</h2>
-                <strong>Linux OS</strong><br/>
-                <em>Apache, Nginx, Node.js</em><br/>
-                <br/>
-                I can install, secure, and manage your Web and Application Servers.
-                <!--EOF:slider-item content-->
-                
-				</div>
-            </div>
-        </div>
-        <!--EOF:slider-item-->
-        
-        <!--slider-item-->
-        <div class="slider-item">
-            <div class="content container_12">
-            	<div class="grid_12">
-                
-                <!--slider-item content-->
-                <div style="float:right; padding:0 0 0 30px;">
-                <img class="masked" src="themes/corporateclean/mockup/slide-4.jpg"/>
-                </div>
-                <h2>Javascript, PHP and MySQL</h2>
-                <strong>Backend Database Application Development</strong><br/>
-                <br/>
-		I can design the Front-end and program the Back-end of your Online Database Application using PHP and MySQL, or
-		I can connect it to your existenting Front-end UI.
-                <!--EOF:slider-item content-->
-                
-				</div>
-            </div>
-        </div>
-        <!--EOF:slider-item-->
-    
-    </div>
-    <!-- EOF: #slideshow -->
-    
-    <!-- #slider-controls-wrapper -->
-    <div id="slider-controls-wrapper">
-        <div id="slider-controls" class="container_12">
-            <ul id="slider-navigation">
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-            </ul>
-        </div>
-    </div>
-    <!-- EOF: #slider-controls-wrapper -->
-  
-</div><!-- EOF: #banner -->
-
-<!-- #content -->
-<div id="content">
-<!-- #content-inside -->
-<div id="content-inside" class="container_12 clearfix">
-</div><!-- EOF: #content-inside -->
-	
-</div>
-<!-- EOF: #content -->
-
-
-<!-- #footer -->    
-<div id="footer">
-	<!-- #footer-inside -->
-    <div id="footer-inside" class="container_12 clearfix">    
-        <div class="footer-area grid_4">
-                </div><!-- EOF: .footer-area -->
-        <div class="footer-area grid_4">
-                </div><!-- EOF: .footer-area -->
-        <div class="footer-area grid_4">
-                </div><!-- EOF: .footer-area -->       
-    </div><!-- EOF: #footer-inside -->
-</div><!-- EOF: #footer -->
-
-<!-- #footer-bottom -->    
-<div id="footer-bottom">
-	<!-- #footer-bottom-inside --> 
-    <div id="footer-bottom-inside" class="container_12 clearfix">
-    	<!-- #footer-bottom-left --> 
-    	<div id="footer-bottom-left" class="grid_8">                       
-        </div>
-    	<!-- #footer-bottom-right --> 
-        <div id="footer-bottom-right" class="grid_4">
-        
-        	        
-        </div><!-- EOF: #footer-bottom-right -->
-       
-    </div><!-- EOF: #footer-bottom-inside -->
-    
-    
-</div><!-- EOF: #footer -->
-  <script type="text/javascript">
-<!--//--><![CDATA[//><!--
-jQuery(document).ready(function($) {
-	
-	$(window).load(function() {
-	
-		$("#slideshow img").show();
-		$("#slideshow").fadeIn("slow");
-		$("#slider-controls-wrapper").fadeIn("slow");
-	
-		$("#slideshow").cycle({
-			fx:    "scrollHorz",
-			speed:  "slow",
-			timeout: "13000",
-			random: 0,
-			nowrap: 0,
-			pause: 1,
-			pager:  "#slider-navigation",
-			pagerAnchorBuilder: function(idx, slide) {
-				return "#slider-navigation li:eq(" + (idx) + ") a";
-			},
-			slideResize: true,
-			containerResize: false,
-			height: "auto",
-			fit: 1,
-			before: function(){
-				$(this).parent().find(".slider-item.current").removeClass("current");
-			},
-			after: onAfter
-		});
-	});
-	
-	function onAfter(curr, next, opts, fwd) {
-		var $ht = $(this).height();
-		$(this).parent().height($ht);
-		$(this).addClass("current");
-	}
-	
-	$(window).load(function() {
-		var $ht = $(".slider-item.current").height();
-		$("#slideshow").height($ht);
-	});
-	
-	$(window).resize(function() {
-		var $ht = $(".slider-item.current").height();
-		$("#slideshow").height($ht);
-	});
-	
-	});
-//--><!]]>
+// get and display the innerHTML Title property and include appended text
+var htmlTitle = document.title;
+document.getElementById("pageTitle").innerHTML = htmlTitle;
 </script>
-</body>
+<div id="navbar">
 
+<div id="jquery_jplayer_1" class="jp-jplayer"></div>
+
+<div id="playerControls">
+<div id="jp_container_1" class="jp-audio" role="application" aria-label="media player">
+	<div class="jp-type-playlist">
+		<div id="song_description"></div>  <!-- MP3 Title -->
+		<div class="jp-gui jp-interface">
+			<div class="jp-controls">
+				<button class="jp-previous" role="button" tabindex="0">previous</button>
+				<button class="jp-play" role="button" tabindex="0">play</button>
+				<button class="jp-next" role="button" tabindex="0">next</button>
+				<button class="jp-stop" role="button" tabindex="0">stop</button>
+			</div>
+			<div class="jp-progress">
+				<div class="jp-seek-bar">
+					<div class="jp-play-bar"></div>
+				</div>
+			</div>
+			<div class="jp-volume-controls">
+				<button class="jp-mute" role="button" tabindex="0">mute</button>
+				<button class="jp-volume-max" role="button" tabindex="0">max volume</button>
+				<div class="jp-volume-bar">
+					<div class="jp-volume-bar-value"></div>
+				</div>
+			</div>
+			<div class="jp-time-holder">
+				<div class="jp-current-time" role="timer" aria-label="time">&nbsp;</div>
+				<div class="jp-duration" role="timer" aria-label="duration">&nbsp;</div>
+			</div>
+			<div class="jp-toggles">
+				<button class="jp-repeat" role="button" tabindex="0">repeat</button>
+				<button class="jp-shuffle" role="button" tabindex="0">shuffle</button>
+			</div>
+		</div>
+
+		<div class="jp-no-solution">
+			<span>Update Required</span>
+			To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+		</div>
+	</div>	
+</div>	
+
+</div>
+</div>
+	<div id="songImage"></div>	<!-- display the image that corresponds with MP3 -->
+</div>
+
+<!-- Stick Scroll function -->
+<script type="text/javascript">
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+</body>
 </html>
