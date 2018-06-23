@@ -107,9 +107,9 @@ $(document).ready(function(){
 </script>
 </head>
 <body onload="changeIt('jpg/502 Blues - Shorter, Wayne.jpg', 'songImage')"> <!-- Change image to correspond with MP3 -->
-<div class="mainContent">
-	<div class="menuContainer">
-		<div class="dl_parent">
+
+<div id="mainContent">
+	<div id="menuContainer">
 			<div id="jp_container_1" class="jp-audio" role="application" aria-label="media player">
 				<div class="jp-type-playlist">
 					<div id="jquery_jplayer_1" class="jp-jplayer"></div>
@@ -124,7 +124,6 @@ $(document).ready(function(){
 					</div>
 				</div>
 			</div>
-		</div>
 	</div>	
 <script>
 // get and display the innerHTML Title property and include appended text
@@ -134,6 +133,7 @@ document.getElementById("pageTitle").innerHTML = htmlTitle;
 <div id="navbar">
 
 <div id="jquery_jplayer_1" class="jp-jplayer"></div>
+
 <div id="playerControls">
 <div id="jp_container_1" class="jp-audio" role="application" aria-label="media player">
 	<div class="jp-type-playlist">
