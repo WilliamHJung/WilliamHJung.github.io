@@ -638,6 +638,7 @@ img {
 .btn {
     border: none;
     color: gray;
+	background-color: #eee;
     padding: 4px 6px;
     font-size: 20px;
     cursor: pointer;
