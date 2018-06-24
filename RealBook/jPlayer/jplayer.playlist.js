@@ -539,10 +539,10 @@ return;
 
 /* --------------------------------Drop down Menu-------------------------------- */
 $(window).on('load',function(){
-    $('.dropDownMenu_link').click(function(){
-        var submenu = $(this).parent().children('.dropDownMenu_sub_dd');
+    $('#btnMenu').click(function(){
+        var submenu = $(this).parent().children('#dropDownMenu_sub_dd');
         if (submenu.css('display') == 'none') {
-            $('.dropDownMenu_sub_dd').hide(); 	//first hide any previously showing submenu's
+            $('#dropDownMenu_sub_dd').hide(); 	//first hide any previously showing submenu's
             submenu.show(); 			//then show the current submenu
         } else {
             submenu.hide(); 			//hide the current submenu again
@@ -552,10 +552,18 @@ $(window).on('load',function(){
 
 // select DIVs by Id (#) or Class (.) and Detect if click occured then close menu
 jQuery(function($){
-  $('#songImage, #playerControls, .jp-playlist').click(function(e){	
-	$('.dropDownMenu_sub_dd').hide(); 		// hide DIV Class
+  $('#songImage, #playerControls, #titleBarButtons, .jp-playlist').click(function(e){	
+	$('#dropDownMenu_sub_dd').hide(); 		// hide DIV Class
     e.stopPropagation(); 			// Stop the click event from bubbling to parent elements
   });
 });
 
-/* --------------------------------End Drop down Menu-------------------------------- */
+/* --------------------------------Hide/Unhide Song Image Div-------------------------------- */
+function divHide() {
+    var x = document.getElementById("songImage");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+} 
