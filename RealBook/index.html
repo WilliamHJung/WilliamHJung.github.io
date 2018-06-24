@@ -8,6 +8,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 
 <link href="jPlayer/skin/grayDay/css/grayDay.css" rel="stylesheet" type="text/css" /><!-- Minify '.min' after mods - wj -->
+<link href="css/font-awesome-all.css" rel="stylesheet" type="text/css" />
+
 <script type="text/javascript" src="jPlayer/jquery.min.js"></script>
 <script type="text/javascript" src="jPlayer/jquery.jplayer.js"></script><!-- Minify '.min' after mods - wj -->
 <script type="text/javascript" src="jPlayer/jplayer.playlist.js"></script><!-- Minify '.min' after mods - wj -->
@@ -113,23 +115,31 @@ $(document).ready(function(){
 			<div id="jp_container_1" class="jp-audio" role="application" aria-label="media player">
 				<div class="jp-type-playlist">
 					<div id="jquery_jplayer_1" class="jp-jplayer"></div>
-								
-					<div class="dropDownMenu_link">&#9776; <span id="pageTitle"></span></div>	 <!-- display html page Title -->		
-					<div class="dropDownMenu_sub_dd"> 
+					<button class="btn" id="btnMenu"><i class="fas fa-bars"></i></button>
+					<div id="dropDownMenu_sub_dd"> 
 						<div class="jp-playlist">
 							<ul>
 								<li></li>
 							</ul>
 						</div> <!-- end jp-playlist -->				
 					</div>
+					<span id="titleBarButtons"> 
+					<span id="pageTitle"></span> <!-- display html page Title -->						
+					<button class="btn" onclick="divHide()"><i class="fas fa-image"></i></button><!-- hide song Image -->	
+				
+				<!--	<button class="btn"><i class="fas fa-search"></i></button> -- Song Search Function -->	
+					
+					</span>
 				</div>
 			</div>
-	</div>	
+	</div>
+	
 <script>
 // get and display the innerHTML Title property and include appended text
 var htmlTitle = document.title;
 document.getElementById("pageTitle").innerHTML = htmlTitle;
 </script>
+
 <div id="navbar">
 
 <div id="jquery_jplayer_1" class="jp-jplayer"></div>
@@ -179,7 +189,7 @@ document.getElementById("pageTitle").innerHTML = htmlTitle;
 	<div id="songImage"></div>	<!-- display the image that corresponds with MP3 -->
 </div>
 
-<!-- Stick Scroll function -->
+<!-- Sticky Scroll function -->
 <script type="text/javascript">
 window.onscroll = function() {myFunction()};
 
