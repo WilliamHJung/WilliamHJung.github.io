@@ -597,12 +597,8 @@ img {
 }
 
 /* ---------------------The Playlist menu--------------------- */
-.dropDownMenu_link {
-	font-size: 20px;
-	padding: 0px 6px 0px 6px;
-    cursor:pointer;
-}
-.dropDownMenu_sub_dd {
+
+#dropDownMenu_sub_dd {
 	display: none;
     position: absolute;
     min-width: 350px;
@@ -615,7 +611,6 @@ img {
 
 #navbar {
   overflow: hidden;
-
 }
 
 #navbar a {
@@ -636,4 +631,19 @@ img {
 
 .sticky + .mainContent {
   padding-top: 60px;
+}
+
+
+/* ---------------------font awesome buttons--------------------- */
+.btn {
+    border: none;
+    color: gray;
+    padding: 4px 6px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+    color: #0d88c1;
 }
