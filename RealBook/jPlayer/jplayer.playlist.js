@@ -529,7 +529,7 @@
 /* -----------------------------------------------wj additions------------------------------------------------ */
 
 /* Set the image that corresponds to each mp3 selection */
-function changeIt(imageName,objName)
+function changeIt(imageName,objName) // imageName is the filename with Path of the MP3, and objName = DIV id
 {
 var obj = document.getElementById(objName);
 var imgTag = "<img src='"+imageName+"' border='0' />";
@@ -558,8 +558,8 @@ jQuery(function($){
   });
 });
 
-/* --------------------------------Hide/Unhide Song Image Div-------------------------------- */
-function divHide() {
+/* --------------------------------Unhide/Hide Song Image Div-------------------------------- */
+function divUnHide() {
     var x = document.getElementById("songImage");
     if (x.style.display === "none") {
         x.style.display = "block";
