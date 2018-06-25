@@ -125,7 +125,7 @@ $(document).ready(function(){
 					</div>
 					<span id="titleBarButtons"> 
 					<span id="pageTitle"></span> <!-- display html page Title -->						
-					<button class="btn" onclick="divHide()"><i class="fas fa-image"></i></button><!-- hide song Image -->	
+					<button class="btn" onclick="divUnHide()"><i class="fas fa-image"></i></button><!-- Unhide/hide song Image -->	
 				
 				<!--	<button class="btn"><i class="fas fa-search"></i></button> -- Song Search Function -->	
 					
@@ -186,7 +186,7 @@ document.getElementById("pageTitle").innerHTML = htmlTitle;
 
 </div>
 </div>
-	<div id="songImage"></div>	<!-- display the image that corresponds with MP3 -->
+	<div id="songImage" style="display:none"></div>	<!-- DIV is hidden by default - will display image that corresponds with MP3 after divUnHide() button clicked  -->
 </div>
 
 <!-- Sticky Scroll function -->
