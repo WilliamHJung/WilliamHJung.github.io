@@ -616,13 +616,9 @@ img {
 #dropDownMenu_sub_dd a:hover {
   color: #0d88c1; }
 
-  /* ---------------------not working yet--------------------- */
-#dropDownMenu_sub_dd a:active {
+#dropDownMenu_sub_dd a.jp-playlist-current {   /* hilight Currently selected song in Playlist Menu */
 color: #0d88c1; }
-
-div.jp-type-playlist div.jp-playlist a.jp-playlist-current {
-  color: #0d88c1; }   /* ---------------------code that used to work in default skin--------------------- */
-  
+ 
 /* ---------------------Sticky Navbar--------------------- */
 
 #navbar {
