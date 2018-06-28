@@ -582,6 +582,15 @@ span.jp-artist {
 border-top: 1px solid gray;
 }
 
+#clickableBackground {
+ position:absolute;
+ left:220px;
+ top:0px;
+ width:100%;
+ height:100%;
+/* background-color:rgba(51,204,51,0.3);  ------ Uncomment to see colored clickable area */
+}
+
 /* ---------------------Song Images-------------------- */
 
 img {
@@ -625,17 +634,6 @@ color: #0d88c1; }
   overflow: hidden;
   background-color: #eee;
 }
-/*
-#navbar a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-*/
 
 .sticky {
   position: fixed;
