@@ -96,7 +96,7 @@ $(document).ready(function(){
 			mp3:"mp3/Anthropology - Parker,%20Charlie.mp3",
 		}
 	], {
-		swfPath: "dist/jplayer",
+		swfPath: "player/jquery.jplayer",
 		supplied: "mp3",
 		wmode: "window",
 		useStateClassSkin: true,
@@ -111,8 +111,7 @@ $(document).ready(function(){
 <body onload="changeIt('jpg/502 Blues - Shorter, Wayne.jpg', 'songImage')"> <!-- Change image to correspond with MP3 -->
 
 <div id="mainContent">
-	<div id="jquery_jplayer_1" class="jp-jplayer"></div>
-	
+	<div id="jquery_jplayer_1" class="jp-jplayer"></div>	
 	<div id="jp_container_1" class="jp-audio" role="application" aria-label="media player">
 		<div id="menuContainer">
 			<button class="btn" id="btnMenu"><i class="fas fa-bars"></i></button>
@@ -122,10 +121,12 @@ $(document).ready(function(){
 							<li>&nbsp;</li>
 						</ul>
 					</div>
-				</div>		
-			<span id="titleBarButtons"> 
-			<span id="pageTitle"></span> <!-- display html page Title -->						
-			<button class="btn" onclick="divUnHide()"><i class="fas fa-image"></i></button><!-- hide song Image -->			
+				</div>
+				<span id="titleBarButtons">
+				<span id="pageTitle"></span> <!-- display html page Title -->						
+				<button class="btn" onclick="divUnHide()"><i class="fas fa-image"></i></button><!-- hide song Image -->
+				</span>
+			<div id="clickableBackground"></div> <!-- close the Menu by clicking in this background DIV -->
 		</div>
 		
 	<div id="navbar">
@@ -166,16 +167,15 @@ $(document).ready(function(){
 				<span>Update Required</span>
 				To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
 			</div>
-		</div>
-		
-<script>
-// get and display the innerHTML Title property and include appended text
-var htmlTitle = document.title;
-document.getElementById("pageTitle").innerHTML = htmlTitle;
-</script>
+	</div>	
+	<script>
+	// get and display the innerHTML Title property and include appended text
+	var htmlTitle = document.title;
+	document.getElementById("pageTitle").innerHTML = htmlTitle;
+	</script>
 
 	</div>
-<div id="songImage"></div>	<!-- display the image that corresponds with MP3 -->
+	<div id="songImage"></div>	<!-- display the image that corresponds with MP3 -->
 </div>
 
 <!-- Sticky Scroll function -->
