@@ -585,9 +585,9 @@ border-top: 1px solid gray;
 #clickableBackground {
  position:absolute;
  left:220px;
- top:0px;
- width:100%;
- height:100%;
+ top:8px;
+ width: 126px;
+ height: 40px;
 /* background-color:rgba(51,204,51,0.3);  ------ Uncomment to see colored clickable area */
 }
 
