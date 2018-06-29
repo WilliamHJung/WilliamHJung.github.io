@@ -552,7 +552,7 @@ $(window).on('load',function(){
 
 // select DIVs by Id (#) or Class (.) and Detect if click occured then close menu
 jQuery(function($){
-  $('#songImage, #clickableTopStrip , #clickableBackground, #playerControls, #titleBarButtons, .jp-playlist').click(function(e){	
+  $('#songImage, #clickableBackground, #playerControls, #titleBarButtons, .jp-playlist').click(function(e){	
 	$('#dropDownMenu_sub_dd').hide(); 		// hide DIV Class
     e.stopPropagation(); 			// Stop the click event from bubbling to parent elements
   });
