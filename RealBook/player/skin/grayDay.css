@@ -582,26 +582,15 @@ span.jp-artist {
 border-top: 1px solid gray;
 }
 
-#clickableTopStrip {
+#clickableBackground {
  position:absolute;
-left: 220px;
-/*left: 400px; for use with Search function or other icons ------ */
+ left:220px;
  top:0px;
  width:100%;
- height:40px;
+ height:100%;
 /* background-color:rgba(51,204,51,0.3);  ------ Uncomment to see colored clickable area */
 }
 
-#clickableBackground {
- position: absolute;
- left: 0px;
- top: 102px;
- width: 100%;
- height: 640px;
- /* background-color: blue;  ------ Uncomment to see colored clickable area */
- z-index: 0;
- }
- 
 /* ---------------------Song Images-------------------- */
 
 img {
@@ -614,7 +603,6 @@ img {
 	height:640px;
 	overflow:auto;	/*	Create scrollbar for image beyond 640px on large screens */
 	border:1px solid gray;
-	z-index: 1;
 }
 
 /* ---------------------The Playlist menu--------------------- */
@@ -626,7 +614,7 @@ img {
 	max-height: 440px;
 	overflow-y: scroll;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 2;
+    z-index: 1;
 }
 
 #dropDownMenu_sub_dd a {
