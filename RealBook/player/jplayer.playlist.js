@@ -422,8 +422,9 @@
 
 	/* remove path and extension information from mp3 file and then add .jpg extension to file name */				
 	var name_without_ext = (currentMP3info.split('\\').pop().split('/').pop().split('.'))[0]; // removes url address and any extension and leaves the filename only
+	var safeString = name_without_ext.replace( "'", '%27' ); // replace ' with URL Encoded Characters
 	var jpg_ext = ".jpg";									 
-	var jpgFilename = name_without_ext.concat(jpg_ext);					// add .jpg extension to filename
+	var jpgFilename = safeString.concat(jpg_ext);					// add .jpg extension to filename
 	var jpgPath = "jpg/";
 	var jpgFilenamePath = jpgPath.concat(jpgFilename);					// add directory path to filename	
 	/* Update songImage DIV with corresponding image when mp3 file selection changes */
@@ -446,13 +447,14 @@
 	var currentMP3info = this.playlist[this.current].mp3;    			// save song mp3 info in a variable
 
 	/* remove path and extension information from mp3 file and then add .jpg extension to file name */				
-	var name_without_ext = (currentMP3info.split("\\").pop().split("/").pop().split("."))[0]; // removes url address and any extension and leaves the filename only
+	var name_without_ext = (currentMP3info.split('\\').pop().split('/').pop().split('.'))[0]; // removes url address and any extension and leaves the filename only
+	var safeString = name_without_ext.replace( "'", '%27' ); // replace ' with URL Encoded Characters
 	var jpg_ext = ".jpg";									 
-	var jpgFilename = name_without_ext.concat(jpg_ext);					// add .jpg extension to filename
+	var jpgFilename = safeString.concat(jpg_ext);					// add .jpg extension to filename
 	var jpgPath = "jpg/";
 	var jpgFilenamePath = jpgPath.concat(jpgFilename);					// add directory path to filename	
 	/* Update songImage DIV with corresponding image when mp3 file selection changes */
-	changeIt(jpgFilenamePath, "songImage");								// update songImage DIV with corresponding image
+	changeIt(jpgFilenamePath, 'songImage');								// update songImage DIV with corresponding image
 /* ---------------------------------------------end wj additions--------------------------------------------- */	
 					
 				}
