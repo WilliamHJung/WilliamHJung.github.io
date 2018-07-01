@@ -582,15 +582,6 @@ span.jp-artist {
 border-top: 1px solid gray;
 }
 
-#clickableBackground {
- position:absolute;
- left:220px;
- top:8px;
- width: 126px;
- height: 40px;
-/* background-color:rgba(51,204,51,0.3);  ------ Uncomment to see colored clickable area */
-}
-
 /* ---------------------Song Images-------------------- */
 
 img {
