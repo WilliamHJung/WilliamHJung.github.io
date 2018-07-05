@@ -6,9 +6,7 @@
 
 <title>The Real Book</title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-
 <link href="player/skin/grayDay.css" rel="stylesheet" type="text/css" />
-<link href="css/font-awesome-all.css" rel="stylesheet" type="text/css" />
 
 <script type="text/javascript" src="player/jquery.min.js"></script>
 <script type="text/javascript" src="player/jquery.jplayer.js"></script>
@@ -38,7 +36,6 @@ $(document).ready(function(){
 	title:"Afternoon in Paris - Lewis, John",
 	mp3:"mp3/Afternoon%20in%20Paris - Lewis,%20John.mp3",
 },
-
 {
 	title:"Airegin - Rollins, Sonny",
 	mp3:"mp3/Airegin - Rollins,%20Sonny.mp3",
@@ -210,8 +207,7 @@ $(document).ready(function(){
 {
 	title:"Body and Soul - Coltrane, John",
 	mp3:"mp3/Body and Soul - Coltrane, John.mp3",
-}
-		
+}		
 	], {
 		swfPath: "player/jquery.jplayer",
 		supplied: "mp3",
@@ -231,7 +227,7 @@ $(document).ready(function(){
 	<div id="jquery_jplayer_1" class="jp-jplayer"></div>	
 	<div id="jp_container_1" class="jp-audio" role="application" aria-label="media player">
 		<div id="menuContainer">
-			<button class="btn" id="btnMenu"><i class="fas fa-bars"></i></button>
+			<button class="btn" id="btnMenu"><img src="icons/navicon.png" alt="Menu"></button>
 				<div id="dropDownMenu_sub_dd"> 	<!-- DIV must be ID not Class or jp-playlist won't function! -->			
 					<div class="jp-playlist">
 						<ul>
@@ -241,7 +237,7 @@ $(document).ready(function(){
 				</div>
 				<span id="titleBarButtons">
 				<span id="pageTitle"></span> <!-- display html page Title -->						
-				<button class="btn" onclick="divUnHide()"><i class="fas fa-image"></i></button><!-- hide song Image -->
+				<button class="btn" onclick="divUnHide()"><img src="icons/image.png" alt="Menu"></button><!-- hide song Image -->
 				</span>
 		</div>
 		
