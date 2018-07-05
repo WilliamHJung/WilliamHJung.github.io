@@ -636,11 +636,9 @@ color: #0d88c1; }
   padding-top: 60px;
 }
 
-
-/* ---------------------font awesome buttons--------------------- */
-.btn {
+/* ---------------------buttons--------------------- */
+img.btn {
     border: none;
-    color: gray;
 	background-color: #eee;
     padding: 4px 6px;
     font-size: 20px;
@@ -648,6 +646,6 @@ color: #0d88c1; }
 }
 
 /* Darker background on mouse-over */
-.btn:hover {
-    color: #0d88c1;
+img.btn:hover {
+    background-color: #0d88c1;
 }
