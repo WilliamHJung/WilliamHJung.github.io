@@ -590,7 +590,7 @@ img {
 }
 
 #songImage {
-	display: none;
+	display: block;
 	height:840px;
 	overflow:auto;	/*	Create scrollbar for image beyond 640px on large screens */
 	border:1px solid gray;
