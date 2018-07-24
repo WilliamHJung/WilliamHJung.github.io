@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Responsive Meta Tag-the browser renders width of page at width of its own mobile screen-->
+
+<title>The Real Book Collection</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery.min.js"></script>
+<script src="js/main.js"></script>
+
+</head>
+<body>
+<div id="mainContent">
+	<div id="navbar">
+		  <button class="btn" id="btnMenu"><img src="icons/navicon.png" alt="Menu"></button>
+		  <div id="dropDownMenu_sub_dd">
+		  <ul>
+			<li><a target="_blank" href="RealBook/index.html">The Real Book - 5th Edition</a></li>
+			<li><a target="_blank" href="RealBookVol2/index.html">The Real Book - Volume 2</a></li>
+			<li><a target="_blank" href="RealBookVol3/index.html">The Real Book - Volume 3</a></li>
+			<li><a target="_blank" href="Spaces 6 - Jazz Solos/index.html">Spaces 6 - Jazz Solos</a></li>			
+			</ul>
+		  </div>
+
+		<button class="btn" onclick="divUnHide()"><img src="icons/image.png" alt="RealBook Images"></button><!-- hide song Image -->
+		<span id="titleBar" style="color: black; font-size: 24px;">The Real Book Collection</span>
+	</div>
+
+	<br>
+	<div id="bookImages">		
+		<div class="responsive">
+		  <div class="gallery">
+			<a target="_blank" href="RealBook/index.html">
+			  <img src="RealBook/files/RealBook Cover.jpg" alt="RealBook - 5th Edition" width="400" height="500">
+			</a>
+		  </div>
+		</div>
+
+		<div class="responsive">
+		  <div class="gallery">
+			<a target="_blank" href="RealBookVol2/index.html">
+			  <img src="RealBookVol2/files/RealBookVol2_Cover.jpg" alt="RealBook - Volume 2" width="400" height="500">
+			</a>
+		  </div>
+		</div>
+
+		<div class="responsive">
+		  <div class="gallery">
+			<a target="_blank" href="RealBookVol3/index.html">
+			  <img src="RealBookVol3/files/Real Book - Volume 3.jpg" alt="RealBook - Volume 3" width="400" height="500">
+			</a>
+		  </div>
+		</div>
+
+		<div class="responsive">
+		  <div class="gallery">
+			<a target="_blank" href="Spaces 6 - Jazz Solos/index.html">
+			  <img src="Spaces 6 - Jazz Solos/files/Spaces 6 - Jazz Solos Cover.jpg" alt="Spaces 6 - Jazz Solos" width="400" height="500">
+			</a>
+		  </div>
+		</div>
+
+	</div>
+</div>
+
+<!-- Sticky Scroll function -->
+<script type="text/javascript">
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+<div class="clearfix"></div>
+
+</body>
+</html>
