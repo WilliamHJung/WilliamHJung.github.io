@@ -113,7 +113,7 @@ div.desc {
 }
 
 .responsive {
-    padding: 0 6px;
+    padding: 0 0 6px;
     float: left;
     width: 24.99999%;
 }
@@ -137,6 +137,13 @@ div.desc {
     clear: both;
 }
 
+#bookImages {
+	/* padding: 8px 4px 4px 4px;  padding-top, padding-right, padding-bottom, padding-left */
+}
+
+#mainContent {
+	padding: .5px 4px 4px 4px;
+}
 
 /* ---------------------Sticky Navbar--------------------- */
 
@@ -144,6 +151,7 @@ div.desc {
  /*  overflow: hidden; */
   background-color: #eee;
   border-bottom: 1px solid black;
+  /*padding: 0px 4px 4px 4px;*/
 }
 
 .sticky {
@@ -153,7 +161,7 @@ div.desc {
 }
 
 .sticky + .mainContent {
-  padding-top: 60px;
+  padding-top: 80px;
 }
 
 
