@@ -560,12 +560,12 @@ jQuery(function($){
   });
 });
 
-/* --------------------------------Unhide/Hide Song Image Div-------------------------------- */
-function divUnHide() {
+/* --------------------------------Hide/Unhide Song Image Div-------------------------------- */
+function divHide() {
     var x = document.getElementById("songImage");
-    if (x.style.display !== "block") {
-        x.style.display = "block";
-    } else {
+    if (x.style.display !== "none") {
         x.style.display = "none";
+    } else {
+        x.style.display = "block";
     }
 } 
